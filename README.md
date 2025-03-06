@@ -1,4 +1,13 @@
 # Angular
+## Todoist Project
+
+### ![Screenshot 2025-03-06 135329](https://github.com/user-attachments/assets/10054adf-e6d7-4dcb-ad4b-a2422af5c2ee)
+### ![Screenshot 2025-03-06 135427](https://github.com/user-attachments/assets/ab3d95d6-359f-42e1-8173-f143e31beed3)
+### ![Screenshot 2025-03-06 135525](https://github.com/user-attachments/assets/f901cbfd-2a38-4ef7-9715-9f698e43f34b)
+### ![Screenshot 2025-03-06 135449](https://github.com/user-attachments/assets/061b6036-42ac-41fd-8d7d-27a059f3e06b)![Screenshot 2025-03-06 135435](https://github.com/user-attachments/assets/75c02981-8e5b-407a-9a16-5482725eb023)
+
+### ![Screenshot 2025-03-06 135633](https://github.com/user-attachments/assets/4a36f74c-cdca-4542-a51a-d30312a1753a)
+
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.6.
 

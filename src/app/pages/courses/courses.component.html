@@ -1,0 +1,49 @@
+<div class="container mt-5">
+    <h1 class="text-center mt-5">Kickstart your next project with Todoist Templates</h1>
+    <p class="text-center mt-4 lead">No need to create projects or setups from scratch when we have 50+ templates made for you.</p>
+   <div class="text-center">
+    <button type="button" (click)="getTodo('work')" class="btn shadow p-3  rounded-4  m-3 ">Work</button>
+    <button type="button" (click)="getTodo('personal')" class="btn shadow p-3  rounded-4  m-3 ">personal</button>
+    <button type="button" (click)="getTodo('education')" class="btn shadow p-3  rounded-4  m-3 ">education</button>
+    <button type="button" (click)="getTodo('management')" class="btn shadow p-3  rounded-4  m-3 ">management</button>
+    <button type="button" (click)="getTodo('marketingSales')" class="btn shadow p-3  rounded-4  m-3 ">marketingSales</button>
+    <button type="button" (click)="getTodo('customerSupport')" class="btn shadow p-3  rounded-4  m-3 ">customerSupport</button>
+    <button type="button" (click)="getTodo('management')" class="btn shadow p-3  rounded-4  m-3 ">management</button>
+    <button type="button" (click)="getTodo('personal')" class="btn shadow p-3  rounded-4  m-3 ">'personal</button>
+    
+</div>
+
+<div class="row mt-5 ">
+
+    @for(course of courses; track $index){
+  
+
+    <div class="card" style="width: 14rem;">
+        <div class="card-img-top card-style ">
+            <img [src]="course.img" alt="Accounting Tasks"
+                class="rounded-circle"
+                >
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title">{{course?.title}}</h5>
+            <p class="card-text">{{ course?.description }}</p>
+            <div class="d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-list me-2"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+                <span>List</span>
+            </div>
+        </div>
+    </div>
+
+    }@empty {
+    @if(isAdmin){
+    <div align="center">No Todo added yet</div>
+    }
+    }
+
+</div>

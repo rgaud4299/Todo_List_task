@@ -1,0 +1,35 @@
+.main-img{
+
+  object-fit: cover;
+  object-position: center;
+ overflow: hidden;
+
+img{
+  background-color: #fff0e5;
+  border-radius: 12px;
+  border: 1px solid rgb(235, 230, 230);
+box-shadow: #fff0e5;
+}
+ 
+}
+
+.main{
+  margin-top: 50px;
+}
+
+.main-content{
+display: flex;
+justify-content: space-between;
+
+  h1{
+    font-size:3.5rem;
+    font-weight: bold;
+  }
+}
+
+.button{
+  background-color: #e34432;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+}

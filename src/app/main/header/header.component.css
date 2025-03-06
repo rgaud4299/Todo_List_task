@@ -1,0 +1,95 @@
+nav{
+    background-color: #effefe !important;
+    height: 5rem;
+}
+
+li{
+    a{
+        font-size:1rem;
+        font-weight: 500;
+        margin-left: 1.5rem;
+    }
+}
+
+.logo-text {
+    font-family: 'Proxima Nova', Arial, sans-serif;
+    color: #E44332;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.button{
+    height: 2.5rem;
+    
+    width: 8rem;
+    background-color: #e34432;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+  }
+
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown-content i {
+    margin-right: 10px;
+  }
+  
+  .dropdown-button {
+    background-color: #f0f0f0; /* Light background */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-button i {
+    margin-left: 5px;
+  }
+  
+  .add-task {
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #eee;
+    margin-top: 10px;
+  }
+  
+  .add-task i {
+    margin-right: 10px;
+  }

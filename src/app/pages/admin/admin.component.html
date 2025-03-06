@@ -1,0 +1,80 @@
+<div class="card">
+    <div class="card-header">Add Todoist</div>
+    <div class="card-body">
+        <form #courseForm="ngForm" (ngSubmit)="onSubmit(courseForm)">
+            <div class="mb-3">
+
+                <label for="exampleFormControlInput1"
+                    class="form-label"><b>Task</b></label>
+
+                <input type="text" class="form-control"
+                    id="title" placeholder="work..." name="'title"
+                    #title="ngModel" [(ngModel)]="model.title" required>
+
+                @if(title.invalid && title.touched){
+
+                <div class="text-danger">task is required</div>
+                }
+
+            </div>
+
+            <div class="mb-3">
+
+                <label for="exampleFormControlInput1"
+                    class="form-label"><b>Title</b></label>
+
+                <input type="text" class="form-control"
+                    id="title" placeholder="Enter Title" name="'title"
+                    #title="ngModel" [(ngModel)]="model.title" required>
+
+                @if(title.invalid && title.touched){
+
+                <div class="text-danger">Title is required</div>
+                }
+
+            </div>
+
+            <div class="mb-3 ">
+                <label for="exampleFormControlTextarea1"
+                    class="form-label"><b>Description</b></label>
+                <textarea class="form-control" id="description"
+                    name="description"
+                    rows="3" #description="ngModel"
+                    [(ngModel)]="model.description" required></textarea>
+
+                @if(description.invalid && description.touched){
+                <div class="text-danger">Description is required</div>
+                }
+            </div>
+
+            <div>
+                <label for="image">choose an image : </label>
+                <input type="file" id="image" name="image" accept="image/*"
+                    [multiple]="false" (change)="onFileSelected($event)" ngModel
+                    required>
+
+                @if(cover){
+                <div class="imageDiv" align="right">
+                    <img [src]="cover" alt>
+                </div>
+                }
+
+                @if(showError){
+
+                <div class="text-danger">Image is required</div>
+                }
+            </div>
+
+            <div class="m-3 " align="center">
+                <button type="submit" class="btn btn-primary btn-lg">Save
+                </button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<div class="admin p-4 mt-2">
+<!-- <app-courses  [isAdmin]="true"></app-courses> -->
+
+</div>

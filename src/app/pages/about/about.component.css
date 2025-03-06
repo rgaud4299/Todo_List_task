@@ -1,0 +1,11 @@
+img {
+    object-fit: cover;
+    background: #cec6c1;
+  }
+  
+  h4 {
+      margin-top: 10px;
+  }
+  .about-us{
+    padding-bottom: 6vh;
+  }
